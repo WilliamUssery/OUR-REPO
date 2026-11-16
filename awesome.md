@@ -52,6 +52,14 @@ If you're an Awesome list maintainer, you could encourage projects in your list 
 
 *The badges should not be modified in any way.*
 
+## More badges
+
+Want more badges for your readme, like last commit or version? These help:
+
+- [Shields.io](https://shields.io/docs) - Status, version, and activity badges for any project.
+- [Simple Icons](https://simpleicons.org/) - Brand icons you can add to a Shields.io badge with its `logo` option, such as `?logo=github`.
+- [Shields on Open Collective](https://opencollective.com/shields) - Fund the people who keep Shields.io running.
+
 ## Comment on why something is awesome
 
 Apart from suggesting a particular item on your list, you should also inform your readers *why* it's on the list and how they will benefit from it.

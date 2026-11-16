@@ -2,66 +2,22 @@
 	<img width="500" height="350" src="media/logo.svg" alt="Awesome">
 	<br>
 	<br>
-	<br>
-	<br>
-	<div>
-		<sub>Check out my macOS app</sub>
-		<br>
-		<h2>
-			<a href="https://sindresorhus.com/supercharge">Supercharge</a>
-			<br>
-			<sup>Elevate your Mac experience</sup>
-		</h2>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<hr>
 	<p>
-		<sup>
-			<a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
-		</sup>
+		<b>A curated list of awesome lists.</b>
 	</p>
 	<p>
-		<sup>Special thanks to:</sup>
-		<br>
-		<br>
-		<br>
-		<a href="https://depot.dev?utm_source=github&utm_medium=sindresorhus">
-			<div>
-				<picture>
-					<source width="180" media="(prefers-color-scheme: dark)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-dark.svg">
-					<source width="180" media="(prefers-color-scheme: light)" srcset="https://sindresorhus.com/assets/thanks/depot-logo-light.svg">
-					<img width="180" src="https://sindresorhus.com/assets/thanks/depot-logo-light.svg" alt="Depot logo">
-				</picture>
-			</div>
-			<b>Fast remote container builds and GitHub Actions runners.</b>
-		</a>
-		<br>
-		<br>
-		<br>
+		<a href="awesome.md"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+		<a href="https://github.com/WilliamUssery/our-repo/commits/main"><img src="https://img.shields.io/github/last-commit/WilliamUssery/our-repo?logo=github" alt="Last commit"></a>
+		<a href="contributing.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen?logo=git&logoColor=white" alt="PRs welcome"></a>
 	</p>
-	<hr>
-	<br>
-	<br>
-	<br>
 	<br>
 </div>
 <p align="center">
 	<a href="awesome.md">What is an awesome list?</a>&nbsp;&nbsp;&nbsp;
 	<a href="contributing.md">Contribution guide</a>&nbsp;&nbsp;&nbsp;
 	<a href="create-list.md">Creating a list</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://twitter.com/awesome__re">Twitter</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://github.com/sindresorhus/awesome/commits.atom">Subscribe (RSS)</a>&nbsp;&nbsp;&nbsp;
+	<a href="https://github.com/WilliamUssery/our-repo/commits/main.atom">Subscribe (RSS)</a>&nbsp;&nbsp;&nbsp;
 </p>
-<br>
-<br>
-<p align="center">
-	Just type <a href="https://awesome.re"><code>awesome.re</code></a> to go here. Check out my <a href="https://sindresorhus.com/apps">apps</a> and follow me on <a href="https://twitter.com/sindresorhus">Twitter</a>.
-</p>
-<br>
-<br>
 <br>
 
 ## Contents
@@ -209,7 +165,7 @@
 - [Dart](https://github.com/yissachar/awesome-dart#readme)
 - [Java](https://github.com/akullpp/awesome-java#readme) - Popular secure object-oriented language designed for flexibility to "write once, run anywhere".
 	- [RxJava](https://github.com/eleventigers/awesome-rxjava#readme)
-    - [J2ME](https://github.com/hstsethi/awesome-j2me#readme) - Java specification designed for old keypad phones and PDAs..
+	- [J2ME](https://github.com/hstsethi/awesome-j2me#readme) - Java specification designed for old keypad phones and PDAs.
 - [Kotlin](https://github.com/KotlinBy/awesome-kotlin#readme)
 - [OCaml](https://github.com/ocaml-community/awesome-ocaml#readme)
 - [ColdFusion](https://github.com/seancoyne/awesome-coldfusion#readme)
@@ -750,7 +706,7 @@
 - [OpenGL](https://github.com/eug/awesome-opengl#readme) - Cross-platform API for rendering 2D and 3D graphics.
 - [GraphQL](https://github.com/chentsulin/awesome-graphql#readme)
 - [Urban & Regional Planning](https://github.com/APA-Technology-Division/urban-and-regional-planning-resources#readme) - Concerning the built environment and communities.
-- [Transit](https://github.com/MobilityData/awesome-transit#readme) – Data standards, APIs, apps, tools, datasets, and research around open source technology of public transit.
+- [Transit](https://github.com/MobilityData/awesome-transit#readme) - Data standards, APIs, apps, tools, datasets, and research around open source technology of public transit.
 - [Research Tools](https://github.com/emptymalei/awesome-research#readme)
 - [Data Visualization](https://github.com/javierluraschi/awesome-dataviz#readme)
 - [Microservices](https://github.com/mfornos/awesome-microservices#readme)
@@ -864,3 +820,7 @@
 - [StumbleUponAwesome](https://github.com/basharovV/StumbleUponAwesome) - Discover random pages from the Awesome dataset using a browser extension.
 - [Awesome CLI](https://github.com/umutphp/awesome-cli) - A simple command-line tool to dive into Awesome lists.
 - [Track Awesome List](https://www.trackawesomelist.com) - View the latest updates of Awesome lists.
+
+## Footnotes
+
+This list started as a copy of [sindresorhus/awesome](https://github.com/sindresorhus/awesome), released under [CC0](license).
