@@ -1,23 +1,32 @@
 #!/bin/bash
 set -eo pipefail
 
-# Find the repo in the git diff and then set it to an env variables.
-REPO_TO_LINT=$(
-	git diff origin/main -- readme.md |
-	# Look for changes (indicated by lines starting with +).
-	(grep ^+ || true) |
-	# Get the line that includes the readme.
-	(grep -Eo 'https.*#readme' || true) |
-	# Get just the URL.
-	sed 's/#readme//')
+# Lint each awesome list that this pull request adds to readme.md.
+#
+# A list counts as new when its URL is on an added line of the diff but not on
+# a removed one. Fixing an existing entry's description or indentation shows up
+# as one removed and one added line with the same URL, so it is not linted.
 
-# If there's no repo found, exit quietly.
-if [ -z "$REPO_TO_LINT" ]; then
+DIFF=$(git diff origin/main -- readme.md)
+
+# Print the list URLs on one side of the diff: "+" for added lines, "-" for removed.
+list_urls() {
+	(grep "^$1" <<< "$DIFF" || true) |
+	(grep -Eo 'https://[^) ]*#readme' || true) |
+	sed 's/#readme$//' |
+	sort -u
+}
+
+NEW_URLS=$(comm -23 <(list_urls '+') <(list_urls '-'))
+
+if [ -z "$NEW_URLS" ]; then
 	echo "No new link found in the format:  https://....#readme"
-else
-	echo "Cloning $REPO_TO_LINT"
-	mkdir -p cloned
-	cd cloned
-	git clone "$REPO_TO_LINT" .
-	npx awesome-lint
+	exit 0
 fi
+
+for url in $NEW_URLS; do
+	echo "Cloning $url"
+	dir=$(mktemp -d)
+	git clone "$url" "$dir"
+	(cd "$dir" && npx awesome-lint)
+done
